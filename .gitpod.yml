@@ -1,3 +1,4 @@
+image: gitpod/workspace-python:2023-04-18-14-35-39
 tasks:
   - command: |
       # Confirm the current shallow clone
