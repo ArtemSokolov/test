@@ -1,9 +1,9 @@
 #!/bin/bash
-# Confirm the current shallow clone
-git log -n 5
+echo "Current shallow clone"
+git --no-pager log --decorate=short --pretty=oneline -5
 
-# Attempt to deepen
+echo "Attempting to deepen"
 git fetch --deepen=5
 
-# Verify the operation
-git log -n 5
+echo "Updated history"
+git --no-pager log --decorate=short --pretty=oneline -5
